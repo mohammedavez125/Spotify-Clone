@@ -1,0 +1,49 @@
+.container{
+    min-height: 55vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 18px auto;
+    width: 60%;
+    border-radius: 48px;
+    padding: 34px;
+    background-image: url("../images/1.webp");
+    background-repeat: no-repeat;
+    text-shadow: 0 0 4px rgb(255, 180, 180);
+}
+.container h1 {
+    position: absolute;
+    right: 270px;
+
+}
+.songItem img{
+    width: 60px;
+    margin: 0px 14.2px;
+}
+.songItem{
+    display: flex;
+    height: 62px;
+    background-color: white;
+    color: black;
+    margin: 12px 3px;
+    width: 133%;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.songListPlay i{
+    cursor: pointer;
+    padding:0px 10px;
+}
+.songList {
+    position: absolute;
+    right: 395px;
+    top: 160px;
+}
+.songList::after {
+    content: none !important;
+ }
+ .songList::before {
+    content: none !important;
+ }
