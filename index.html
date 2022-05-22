@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Spotify</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/bottom.css">
+    <link rel="stylesheet" href="./css/containerKa.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio src="./js/1.mp3" id="song1" ></audio>
+    <audio src="./js/The Nights - Avicii- [MyMp3Bhojpuri.In].mp3" id="song2" ></audio>
+    <audio src="./js/Gutt Ch Paranda Preet Sandhu 128 Kbps.mp3" id="song3" ></audio>
+    <audio src="./js/Gotye_ft_Kimbra_-_Somebody_That_I_Used_To_Know.mp3" id="song4" ></audio>
+    <audio src="./js/Unstoppable(PaglaSongs).mp3" id="song5" ></audio>
+
+    <!-- nav bar -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="./images/spotify-logo-png-7053.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <div class="container">
+        <h1>Random Songs</h1>
+
+    <!-- 
+            <div class="songList">
+            
+            <div class="songItem">
+                <img src="./images/81w0BEZFRpL._SS500_.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/artworks-000120512683-tj0mts-t500x500.jpg" alt="2">
+                <span class="songName" >Avicii - The Nights</span>
+                <span class="songListPlay"><span class="timeStamp">2:55</span> <i class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Gutt-Ch-Paranda-Preet-Sandhu-500-500.jpg" alt="3">
+                <span class="songName" >Gutt Ch Paranda</span>
+                <span class="songListPlay"><span class="timeStamp">3:49</span> <i class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Making-Mirrors-2012-500x500.jpg" alt="4">
+                <span class="songName" >Somebody That I Used to Know</span>
+                <span class="songListPlay"><span class="timeStamp">4:04</span> <i class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Unstoppable-English-2016-500x500.jpg" alt="5">
+                <span class="songName" >Sia - Unstoppable</span>
+                <span class="songListPlay"><span class="timeStamp">4:06</span> <i class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+        </div>
+    -->
+
+
+        <!-- song list -->
+        <div class="songList"> 
+            <!-- Items -->
+            <div class="songItem">
+                <img src="./images/81w0BEZFRpL._SS500_.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i id="0" class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/artworks-000120512683-tj0mts-t500x500.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i id="1" class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Gutt-Ch-Paranda-Preet-Sandhu-500-500.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i id="2" class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Making-Mirrors-2012-500x500.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i id="3" class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+            <div class="songItem">
+                <img src="./images/Unstoppable-English-2016-500x500.jpg" alt="1">
+                <span class="songName" >Whistle Raja</span>
+                <span class="songListPlay"><span class="timeStamp">3:13</span> <i id="4" class="songItemPlay fa-solid  fa-circle-play""></i> </span>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="songBanner">
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- bottom buttons here -->
+    <div class="bottom">
+        <!-- range -->
+        <input type="range" name="ranges" id="progressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- Font Awesome icons -->
+            <i class="fa-solid fa-3x fa-backward-fast" id="previous"></i>
+            <i class="fa-solid fa-3x fa-circle-play" id="masterPlay""></i>
+            <i class="fa-solid fa-3x fa-forward-fast" id="next"></i>
+        </div>
+        <!-- song info -->
+        <div class="songInfo">
+            <img src="./images/5uwq.gif" alt="gif" id="gif">
+            <span style="padding-bottom: 5px;" id="masterSongName">Whistle Raja</span>
+        </div>
+    </div>
+    <!-- script -->
+    <script src=" ./js/script.js"> </script> 
+    <script src="https://kit.fontawesome.com/21ab3e5fad.js" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,24 @@
+nav ul {
+    display: flex;   
+    list-style-type: none;
+    height: 65px;
+    background-color:black ;
+    text-shadow: 0 0 4px rgb(255, 180, 180);
+}
+.brand img{
+    width: 55px;
+    padding: 14px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    padding: 0px 35px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+nav ul li{
+    padding: 22px 15px;
+}
+.container{
+    color: black;
+}
